@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  height: 200vh; /* Enough height to allow scrolling */
+  background-color: brown;
+  transition: background-color 0.3s ease;
+}
+  
+  .content {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+  }
+  
+  .tree-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .tree {
+    width: 100px;
+    height: 200px;
+    background-image: url('sapling.jpg'); /* Use an image or SVG of a sapling */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative; /* Allow it to move relative to its container */
+    top: 0; /* Start at top */
+    transition: transform 0.3s ease, top 0.3s ease;
+  }
+  
+  /* A space to scroll further */
+  .spacer {
+    height: 100vh;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5rem;
+  }
+  
