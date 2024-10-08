@@ -1,0 +1,84 @@
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:100px;
+    padding-top:20px;
+}
+
+#phone{
+    display: flex;
+    flex-direction: column;
+    line-height:22px;
+}
+
+#phone a{
+    text-decoration: underline;
+    color: white;
+}
+
+#phone a:hover{
+    color:#13678A;
+}
+
+#email{
+    display: flex;
+    flex-direction: column;
+    line-height:22px;
+}
+
+#email a{
+    text-decoration: underline;
+    color: white;
+}
+
+#email a:hover{
+    color:#13678A;
+}
+
+#connect p{
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+}
+
+#connect .social{
+    display: flex;
+    flex-direction: row;
+}
+
+#connect .social a{
+    padding-right: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+#connect p a:hover{
+    transform: scale(1.2);
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    line-height:22px;
+}
+
+#contact a{
+    text-decoration: underline;
+    color: white;
+}
+
+#contact a:hover{
+    color:#13678A;
+}
+
+#copyright{
+    align-self: center;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
