@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    height:80vh;
+    background-color: #273469;
+    border-radius: 10px;
+}
+
+#register{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 2vh;
+}
