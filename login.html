@@ -9,67 +9,18 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="images/logo.png" width="40px" height="40px">
-            </a>
-        </div>
-        <div id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-        <div id="registration">
-            <ul>
-                <li><a href="">Sign up</a></li>
-                <li><a href="">Log in</a></li>
-            </ul>
-        </div>
-    </header>
-    Work in progress
-    <footer style="position: absolute; bottom: 0px; width: 100%;">
-        <div id="links">
-            <div id="phone">
-                Phone:
-                <a href="tel:+910987654321">+91 0987654321</a>
-            </div>
-            <div id="email">
-                Email:
-                <a href="mailto:gshivani00004@gmail.com">greenguardians@gmail.com</a>
-            </div>
-            <div id="connect">
-                <p>Connect with me:<br>
-                    <span class="social">
-                        <a href="">
-                            <img src="images/linkedin.png" alt="linkedin" width="30px" height="30px">
-                        </a>
-                        <a href="">
-                            <img src="images/insta.png" alt="instagram" width="30px" height="30px">
-                        </a>
-                        <a href="">
-                            <img src="images/whatsapp.png" alt="whatsapp" width="30px" height="30px">
-                        </a>
-                    </span>
-                </p>
-            </div>
-            <div id="contact">
-                <p>
-                    Leave a message here:<br>
-                    <a href="">
-                        <i style="font-size: large;">HERE</i>
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div id="copyright">
-            &copy; G.Shivani
-        </div>
-    </footer>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="welcomeMessage"></p>
+        <p>Don't have an account? <a href="registration.html">Register here</a></p> <!-- Link to registration page -->
+    </div>
 </body>
 </html>
