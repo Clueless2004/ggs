@@ -1,15 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Events</title>
     <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="typography.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="cssfilesAn/pressrelease.css">
+    <style>
+        /* Slider Styles */
+        body {
+            overflow: hidden;
+            overflow-y: auto;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slide-container {
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            width: 100%;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+        }
+
+        .slide-content {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        .slide-content h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .slide-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .slide-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .documentary {
+            padding: 0 5em;
+        }
+
+        .poster {
+            background-image: url(/thumbnails/istockphoto-943875208-2048x2048.jpg);
+            padding: 5em 5em;
+            background-position: top;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -32,8 +138,136 @@
             </ul>
         </div>
     </header>
-    Work in progress
-    <footer style="position: absolute; bottom: 0px; width: 100%;">
+    <div class="projects">
+
+        <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+                <!-- Slide 1: Reforestation Initiative -->
+                <div class="slide">
+                    <img src="thumbnails/forest-3369950_1280.jpg" alt="Reforestation Project">
+                    <div class="slide-content">
+                        <h2>Project 1: Reforestation Initiative</h2>
+                        <p>We organized a tree-planting event in a local forest, promoting sustainable forest management
+                            and conservation of biodiversity. Over 500 trees were planted, and we engaged over 200
+                            volunteers from the local community.</p>
+                        <a href="projects.html">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Wildlife Conservation -->
+                <div class="slide">
+                    <img src="thumbnails/wildlife.jpg" alt="Wildlife Conservation Project">
+                    <div class="slide-content">
+                        <h2>Project 2: Wildlife Conservation</h2>
+                        <p>We hosted a fundraising event to support a local wildlife conservation organization, raising
+                            over $10,000 to support conservation efforts in the region.</p>
+                        <a href="projects.html">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Sustainable Land Use -->
+                <div class="slide">
+                    <img src="thumbnails/farmers.jpg" alt="Sustainable Land Use">
+                    <div class="slide-content">
+                        <h2>Project 3: Sustainable Land Use</h2>
+                        <p>We collaborated with local farmers to promote sustainable land use practices through
+                            workshops and demonstrations. Over 50 farmers attended the workshops.</p>
+                        <a href="projects.html">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Community Engagement -->
+                <div class="slide">
+                    <img src="thumbnails/communi.jpg" alt="Community Engagement">
+                    <div class="slide-content">
+                        <h2>Project 4: Community Engagement</h2>
+                        <p>Our community outreach program engaged over 1,000 residents in sustainable land management
+                            practices, reducing waste and increasing recycling rates.</p>
+                        <a href="projects.html">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Policy Advocacy -->
+                <div class="slide">
+                    <img src="thumbnails/protests.jpg" alt="Policy Advocacy">
+                    <div class="slide-content">
+                        <h2>Project 6: Policy Advocacy</h2>
+                        <p>We hosted a policy forum to advocate for stronger laws protecting forests, wildlife, and
+                            promoting sustainable land use practices.</p>
+                        <a href="projects.html">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Education and Awareness -->
+                <div class="slide">
+                    <img src="thumbnails/educating.webp" alt="Education and Awareness">
+                    <div class="slide-content">
+                        <h2>Project 7: Education and Awareness</h2>
+                        <p>Our educational program reached over 5,000 students and community members, promoting the
+                            importance of sustainable land use and conservation.</p>
+                        <a href="projects.html">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Previous and Next Buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    <h1 align="center">Documentary</h1>
+    <div class="documentary">
+        <iframe width="100%" height="920" src="https://www.youtube.com/embed/D9xFFyUOpXo" title="Documentary Title"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <h1 align="center">Press Releases</h1>
+    <div class="featured-pr">
+
+
+        <div class="press-release">
+            <img src="thumbnails/pr1.jpeg" alt="Education and Awareness">
+            <h2>New Reforestation Initiative Launched to Combat Deforestation</h2>
+            <p>A groundbreaking reforestation project has been launched in [Location] with the goal of restoring
+                degraded forests and combating climate change. The initiative will plant millions of trees and promote
+                sustainable land management practices.</p>
+        </div>
+
+        <div class="press-release">
+            <img src="thumbnails/pr2.jpg" alt="Education and Awareness">
+            <h2>Local Community Implements Innovative Conservation Program</h2>
+            <p>A community-based conservation program has been implemented in [Location] to protect biodiversity and
+                promote sustainable livelihoods. The program includes initiatives such as wildlife habitat restoration,
+                reforestation, and eco-tourism development.</p>
+        </div>
+
+        <div class="press-release">
+            <img src="thumbnails/pr3.jpg" alt="Education and Awareness">
+            <h2>Global Leaders Pledge to Protect Biodiversity</h2>
+            <p>A group of world leaders has signed a declaration committing to halt biodiversity loss and protect
+                ecosystems by 2030. The declaration outlines a series of ambitious goals and targets to address the
+                crisis facing the planet's natural world.
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="testimonials">
+
+    </div>
+    <div class="poster">
+        <div class="poster-content">
+            <h1>Become a Member</h1>
+            <p>Join our growing community of supporters who are committed to protecting our planet and its inhabitants.
+            </p>
+            <a href="#">Join Now</a>
+        </div>
+    </div>
+    <div class="donate">
+
+    </div>
+
+    <footer style="position: absolute; width: 100%;">
         <div id="links">
             <div id="phone">
                 Phone:
@@ -72,4 +306,31 @@
         </div>
     </footer>
 </body>
+<!-- JavaScript for Slider Functionality -->
+<script>
+    const sliderTrack = document.getElementById('sliderTrack');
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    // Move slide function
+    function moveSlide(direction) {
+        currentSlide += direction;
+
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        } else if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        }
+
+        // Update the position of the slider
+        sliderTrack.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+    }
+
+    // Auto-slide every 5 seconds
+    setInterval(() => {
+        moveSlide(1);
+    }, 5000);
+</script>
+
 </html>

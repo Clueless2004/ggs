@@ -1,0 +1,51 @@
+.featured-pr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px;
+  max-width: 1;
+}
+
+.press-release {
+  flex: 1;
+  max-width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.press-release:hover {
+  transform: scale(1.05);
+}
+
+.press-release img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.pres-release h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.press-release p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: 15px 0;
+}
+
+.poster-content{
+  background: #000000a1;
+  color: aliceblue;
+  padding: 4em;
+}
