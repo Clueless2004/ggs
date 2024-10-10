@@ -12,72 +12,6 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <style>
-        /* General Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #006400;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-        }
-
-        #logo img {
-            margin-left: 20px;
-        }
-
-        #navigation ul {
-            display: flex;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        #navigation ul li {
-            margin-right: 15px;
-        }
-
-        #navigation ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        #navigation ul li a:hover {
-            background-color: #228B22;
-            border-radius: 5px;
-        }
-
-        #registration ul {
-            display: flex;
-            list-style-type: none;
-            margin-right: 20px;
-        }
-
-        #registration ul li {
-            margin-left: 15px;
-        }
-
-        #registration ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background-color: #228B22;
-        }
-
-        #registration ul li a:hover {
-            background-color: #004d00;
-        }
-
         /* About Us Content */
         .about-container {
             max-width: 1200px;
@@ -154,28 +88,6 @@
             font-size: 1.1rem;
         }
 
-        /* Footer */
-        footer {
-            background-color: #006400;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        footer .social img {
-            margin: 0 10px;
-        }
-
         @media (max-width: 768px) {
             #navigation ul {
                 flex-direction: column;
@@ -213,14 +125,14 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="donation.html">Donations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.php">Donations</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </div>
         <div id="registration">
             <ul>
-                <li><a href="registration.html">Sign up</a></li>
-                <li><a href="login.html">Log in</a></li>
+                <li><a href="registration.php">Sign up</a></li>
+                <li><a href="login.php">Log in</a></li>
             </ul>
         </div>
     </header>
@@ -276,7 +188,7 @@
                 </p>
             </div>
             <div id="contact">
-                <p>Leave a message here: <a href="#">HERE</a></p>
+                <p>Leave a message here: <a href="contact.php">HERE</a></p>
             </div>
         </div>
         <div id="copyright">
