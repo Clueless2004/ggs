@@ -1,25 +1,26 @@
 /* Dark background and lighter container */
 body {
-    background-color: #012030;  /* Dark background */
+    background-color: #4c341a;  /* Dark background */
 }
 
 .container {
     max-width: 60%;
     margin: 50px auto;  /* Center the container */
     padding: 20px;
-    background-color: #45C4B0;  /* Lighter container */
-    border: 1px solid #012030;  /* Border color matches the background */
+    background-color: #344625;  /* Lighter container */
+    border: 1px solid #4c341a;  /* Border color matches the background */
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     text-align: center;  /* Center the content inside */
+    color: #fff;
 }
 
 /* Center-align input fields and buttons */
 input, select, button {
-    width: 96.5%;  /* Occupy 96.5% of the container width */
+    width: 96.5%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #45C4B0;  /* Border color to match the container background */
+    border: 1px solid #344625;  /* Border color to match the container background */
     border-radius: 5px;
     box-sizing: border-box;  /* Ensure padding doesn't affect width */
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -40,12 +41,12 @@ button:hover {
 
 p {
     margin-top: 20px;
-    color: #000;  /* Text color for paragraph */
+    color: #fff;  /* Text color for paragraph */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a {
-    color: #000;  /* Link color */
+    color: #fff;  /* Link color */
     font-style: italic;  /* Italic style for links */
     text-decoration: none;  /* No underline by default */
 }
