@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+/* Biodiversity Section Styles */
+.biodiversity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.biodiversity-data {
+    width: 30%; /* Take 30% of the container width for the data */
+}
+
+.biodiversity-chart {
+    width: 95%; /* Take 65% of the container width for the chart */
+}
+
+.biodiversity-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    color: #34495e;
+}
+
+.biodiversity-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.key {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+/* Land Use Section Styles */
+.land-use-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.land-use-legend {
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    color: #34495e;
+}
+
+.legend-list {
+    list-style: none;
+    padding: 0;
+}
+
+.legend-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend-key {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.land-use-image-container {
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#land-use-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the container properly */
+}
