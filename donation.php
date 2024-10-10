@@ -65,14 +65,14 @@ $conn->close();
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="donation.html">Donations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.php">Donations</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </div>
         <div id="registration">
             <ul>
-                <li><a href="registration.html">Sign up</a></li>
-                <li><a href="login.html">Log in</a></li>
+                <li><a href="registration.php">Sign up</a></li>
+                <li><a href="login.php">Log in</a></li>
             </ul>
         </div>
     </header>
@@ -135,7 +135,7 @@ $conn->close();
             <div id="contact">
                 <p>
                     Leave a message here:<br>
-                    <a href="">
+                    <a href="contact.php">
                         <i style="font-size: large;">HERE</i>
                     </a>
                 </p>
