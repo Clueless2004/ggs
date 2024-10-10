@@ -168,7 +168,7 @@ $conn->close();
             </div>
         </div>
         <div id="copyright">
-        &copy; G.G.A<sup>3</sup>
+            &copy; G.G.A<sup>3</sup>
         </div>
     </footer>
 </body>
