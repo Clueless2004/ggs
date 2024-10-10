@@ -80,7 +80,7 @@ $conn->close();
         <h1>Donate for Life on Land</h1>
         <p>Your contribution can help restore and protect ecosystems for future generations.</p>
         
-        <form id="donationForm" action="process_donation.php" method="POST">
+        <form id="donationForm" action="donation.php" method="POST">
     <h2>Make a Donation</h2>
     
     <label for="fullName">Full Name</label>
