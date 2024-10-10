@@ -18,7 +18,7 @@
 }
 .project-quote{
     display: flex;
-    background-image: url(/thumbnails/forest-3369950_1280.jpg);
+    background-image: url(/images/forest-3369950_1280.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -43,12 +43,14 @@
     flex-wrap: wrap;
 }
 .project-gallery-wrap-1 img{
+ 
     width: 48%;
     display: block;
     height: 350px;
     margin: 0 5px;
 }
 .project-gallery-wrap-2 img{
+    background-image: url(/images/pl2.avif);
     width: 100%;
     display: block;
     height: 700px;
@@ -70,12 +72,34 @@
     position: relative;
 }
 #project-related-wrap-1{
-    background-image: url(/thumbnails/fam1.jpg);
+    background-image: url(/images/fam1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
 }
+#project-related-wrap-2{
+    background-image: url(/images/pl1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+#project-related-wrap-3{
+    background-image: url(/images/protests.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+#project-related-wrap-4{
+    background-image: url(/images/pl3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
 .project-related-wrap:hover{
     transform: scale(1.1);
 }
