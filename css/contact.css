@@ -1,0 +1,51 @@
+/* General styles for contact and review sections */
+#contact-review {
+    display: flex;
+    justify-content: center;  /* Center the sections */
+    gap: 20px;  /* Space between the two sections */
+    margin: 20px;  /* Margin around the section */
+}
+
+/* Style for the contact form */
+.contact-container, .review-container {
+    width: 50%;  /* Each section takes up 50% width */
+    background-color: white;  /* Lighter background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;  /* Center-align text */
+}
+
+/* Input fields and buttons */
+input, textarea {
+    width: 96.5%;  /* Occupy 96.5% of the container width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+button {
+    width: 50%;  /* Button takes up half the container width */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Darker button background on hover */
+}
+
+h2 {
+    margin-bottom: 20px;  /* Spacing below heading */
+}
+
+#contact-review p {
+    margin-top: 20px;
+    color: #000;  /* Text color for any paragraph */
+}
+

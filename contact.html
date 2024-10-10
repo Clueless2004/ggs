@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact Us</title>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header>
@@ -20,20 +21,49 @@
         <div id="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donation.html">Donations</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div id="registration">
             <ul>
-                <li><a href="">Sign up</a></li>
-                <li><a href="">Log in</a></li>
+                <li><a href="registration.html">Sign up</a></li>
+                <li><a href="login.html">Log in</a></li>
             </ul>
         </div>
     </header>
-    Work in progress
-    <footer style="position: absolute; bottom: 0px; width: 100%;">
+    <div id="contact-review">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="occupation" placeholder="Occupation/Job Title" required>
+                <input type="text" id="company" placeholder="Company" required>
+                <textarea id="productRequirement" placeholder="Product Requirement" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="review-container">
+            <h2>Leave a Review</h2>
+            <form id="reviewForm">
+                <input type="text" id="reviewName" placeholder="Your Name" required>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="text" id="productReceived" placeholder="Product Received" required>
+                <textarea id="prodcutReview" placeholder="Review" rows="4" required></textarea>
+                <input type="number" id="rating" placeholder="Rating (out of 5)" min="1" max="5" required>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    <footer>
         <div id="links">
             <div id="phone">
                 Phone:
