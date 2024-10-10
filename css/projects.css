@@ -113,3 +113,7 @@
     padding: 10px;
     font-size: 26px;
 }
+
+body{
+    overflow-x: hidden;
+}

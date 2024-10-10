@@ -1,20 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us - Life on Land</title>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        /* About Us Content */
+        .about-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-container h1 {
+            text-align: center;
+            color: #006400;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-container p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .about-container img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .about-container .mission {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .about-container .mission h2 {
+            color: #228B22;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .about-container .mission p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .about-container .values {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .values .value-box {
+            flex: 1;
+            margin: 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .values .value-box h3 {
+            font-size: 1.5rem;
+            color: #006400;
+            margin-bottom: 10px;
+        }
+
+        .values .value-box p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            #navigation ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-container {
+                padding: 15px;
+                margin: 20px;
+            }
+
+            .values {
+                flex-direction: column;
+            }
+
+            .values .value-box {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div id="logo">
             <a href="index.html">
-                <img src="images/logo.png" width="70px" height="40px">
+                <img src="images/logo.png" width="70px" height="40px" alt="Logo">
             </a>
         </div>
         <div id="navigation">
@@ -25,55 +125,76 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="statistics.html">Statistics</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="donation.html">Donations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.php">Donations</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </div>
         <div id="registration">
             <ul>
-                <li><a href="registration.html">Sign up</a></li>
-                <li><a href="login.html">Log in</a></li>
+                <li><a href="registration.php">Sign up</a></li>
+                <li><a href="login.php">Log in</a></li>
             </ul>
         </div>
     </header>
-    Work in progress
+
+    <div class="about-container">
+        <h1>About Us - Life on Land</h1>
+        <img src="images/logo.png" alt="Forest Image">
+        <p>
+            Welcome to our initiative, dedicated to the conservation and preservation of life on land. At <strong>Green Guardians</strong>, we strive to protect the planet’s most precious ecosystems by promoting sustainable practices, reducing deforestation, and empowering communities to take action. Our work encompasses a range of activities, from reforestation projects to wildlife conservation, ensuring that future generations can enjoy the beauty and biodiversity of our natural world.
+        </p>
+        <p>
+            Life on land is the cornerstone of our survival. Forests, wetlands, and grasslands not only provide habitats for countless species but also play a crucial role in regulating the global climate, maintaining the water cycle, and providing food and livelihoods to millions of people. We believe that by working together, we can create a future where humanity lives in harmony with nature.
+        </p>
+
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                To protect and restore ecosystems, safeguard biodiversity, and foster sustainable land use through community-driven solutions and global partnerships.
+            </p>
+        </div>
+
+        <div class="values">
+            <div class="value-box">
+                <h3>Conservation</h3>
+                <p>We are dedicated to preserving biodiversity and protecting endangered species from extinction.</p>
+            </div>
+            <div class="value-box">
+                <h3>Sustainability</h3>
+                <p>Our projects focus on sustainable land use and ecological balance for the future.</p>
+            </div>
+            <div class="value-box">
+                <h3>Community</h3>
+                <p>We engage with local communities to foster stewardship and environmental education.</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div id="links">
             <div id="phone">
-                Phone:
-                <a href="tel:+910987654321">+91 0987654321</a>
+                Phone: <a href="tel:+910987654321">+91 0987654321</a>
             </div>
             <div id="email">
-                Email:
-                <a href="mailto:gshivani00004@gmail.com">greenguardians@gmail.com</a>
+                Email: <a href="mailto:greenguardians@gmail.com">greenguardians@gmail.com</a>
             </div>
             <div id="connect">
-                <p>Connect with me:<br>
+                <p>Connect with us:<br>
                     <span class="social">
-                        <a href="">
-                            <img src="images/linkedin.png" alt="linkedin" width="30px" height="30px">
-                        </a>
-                        <a href="">
-                            <img src="images/insta.png" alt="instagram" width="30px" height="30px">
-                        </a>
-                        <a href="">
-                            <img src="images/whatsapp.png" alt="whatsapp" width="30px" height="30px">
-                        </a>
+                        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="30px" height="30px"></a>
+                        <a href="#"><img src="images/insta.png" alt="Instagram" width="30px" height="30px"></a>
+                        <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" width="30px" height="30px"></a>
                     </span>
                 </p>
             </div>
             <div id="contact">
-                <p>
-                    Leave a message here:<br>
-                    <a href="">
-                        <i style="font-size: large;">HERE</i>
-                    </a>
-                </p>
+                <p>Leave a message here: <a href="contact.php">HERE</a></p>
             </div>
         </div>
         <div id="copyright">
-            &copy; G.Shivani
+            &copy; G.G.A<sup>3</sup>
         </div>
     </footer>
 </body>
+
 </html>

@@ -7,7 +7,7 @@ body {
     max-width: 60%;
     margin: 50px auto;  /* Center the container */
     padding: 20px;
-    background-color: #344625;  /* Lighter container */
+    background-color: #ebf8b4;  /* Lighter container */
     border: 1px solid #344625;  /* Border color matches the background */
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
@@ -20,7 +20,7 @@ input, select, button {
     width: 96.5%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #344625;  /* Border color to match the container background */
+    border: 1px solid #ebf8b4;  /* Border color to match the container background */
     border-radius: 5px;
     box-sizing: border-box;  /* Ensure padding doesn't affect width */
     font-family: Georgia, 'Times New Roman', Times, serif;
